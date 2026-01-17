@@ -4,23 +4,64 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BroSwole</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Graduate&display=swap" rel="stylesheet">
         <style>
-            body {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html, body {
+                height: 100%;
+                background-color: #D2B48C;
+            }
+            .charts {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
+                /* height: 100%; */
+            }
+            .header {
+                float: top;
+                text-align: center;
+                font-family: "Graduate", serif;
+                font-weight: 400;
+                font-size: x-large;
+                font-style: normal;
+                background-color: #556B2F;
+                text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+                margin-bottom: 1rem;
+            }
+            iframe {
+                border: 1rem solid #FFDEAD;
+                border-radius: 0.1rem;
+                margin: 1.4rem;
+            }
+            .bottom {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                margin-top: 1rem;
             }
         </style>
     </head>
     <body>
-        <iframe width="600" height="371"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ7Q6MvmLbZQXARDrcHSOuUorBgu4WbCTNvv4s1lFp6ItXyQm_TW19DU1yD9LloglMV4--9Us6snuK/pubchart?oid=1773582565&amp;format=interactive"></iframe>
+        <header class="header">
+            <h1>BROSWOLE</h1>
+            <h4>SEASON 3</h4>
+        </header>
+        <div class="charts">
+            <iframe width="600" height="371"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ7Q6MvmLbZQXARDrcHSOuUorBgu4WbCTNvv4s1lFp6ItXyQm_TW19DU1yD9LloglMV4--9Us6snuK/pubchart?oid=1773582565&amp;format=interactive"></iframe>
 
-        <iframe width="600" height="371"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ7Q6MvmLbZQXARDrcHSOuUorBgu4WbCTNvv4s1lFp6ItXyQm_TW19DU1yD9LloglMV4--9Us6snuK/pubchart?oid=1475149091&amp;format=interactive"></iframe>
+            <iframe width="600" height="371"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ7Q6MvmLbZQXARDrcHSOuUorBgu4WbCTNvv4s1lFp6ItXyQm_TW19DU1yD9LloglMV4--9Us6snuK/pubchart?oid=1475149091&amp;format=interactive"></iframe>
 
-        <iframe width="600" height="371"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ7Q6MvmLbZQXARDrcHSOuUorBgu4WbCTNvv4s1lFp6ItXyQm_TW19DU1yD9LloglMV4--9Us6snuK/pubchart?oid=1661279066&amp;format=interactive"></iframe>
+            <iframe width="600" height="371"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ7Q6MvmLbZQXARDrcHSOuUorBgu4WbCTNvv4s1lFp6ItXyQm_TW19DU1yD9LloglMV4--9Us6snuK/pubchart?oid=1661279066&amp;format=interactive"></iframe>
+        </div>
+        <header class="header bottom"><h6>Sponsored by [your company here]</h6></header>
     </body>
 </html>
